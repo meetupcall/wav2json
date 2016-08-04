@@ -28,6 +28,9 @@ endif
 
 all: $(BINARY)
 
+install:
+	echo "Dummy entry"
+
 $(SRC)/version.hpp: Makefile version.txt
 	echo "#ifndef VERSION_HPP__" > $(SRC)/version.hpp
 	echo "#define VERSION_HPP__" >> $(SRC)/version.hpp
